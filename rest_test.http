@@ -1,0 +1,62 @@
+### ALL AUTHORS
+GET http://localhost:8000/api/authors/
+
+### SINGLE AUTHOR
+GET http://localhost:8000/api/authors/2
+
+### AUTHOR POST request
+POST http://localhost:8000/api/authors/
+Content-Type: application/json
+
+{
+    "name": "Allamuradov Farkhod",
+    "title": "Software Engineer",
+    "company": "Slikroad Express",
+    "email": "farkhod@silkroad.com"
+}
+
+### AUTHOR PUT request
+POST http://localhost:8000/api/authors/1?_method=PUT
+Content-Type: application/json
+
+{
+    "name": "Allamuradov Ramazon",
+    "title": "Software Engineer",
+    "company": "Slikroad Express",
+    "email": "farkhod@silkroad.uz"
+}
+
+### AUTHOR DELETE request
+DELETE http://localhost:8000/api/authors/2
+
+
+### ALL BOOKS
+GET http://localhost:8000/api/books/
+
+### SINGLE Book
+GET http://localhost:8000/api/books/2
+
+### BOOK POST request
+POST http://localhost:8000/api/books/
+Content-Type: application/json
+
+{
+    "title": "Single Way",
+    "author_id": "1",
+    "abstract": "Aspernatur explicabo velit consequatur est eaque eos. Officiis dignissimos fuga culpa adipisci hic. Accusantium sapiente eius aut enim officiis quis. Blanditiis explicabo voluptates delectus numquam. Commodi tenetur magnam necessitatibus rerum magnam. Voluptas dolor fugiat ipsam repellat voluptatum. Cupiditate debitis ea nobis veritatis nihil. Alias mollitia labore eveniet voluptatem maxime explicabo."
+}
+
+### BOOK PUT request
+POST http://localhost:8000/api/books/2?_method=PUT
+Content-Type: application/json
+
+{
+    "title": "One Way",
+    "author_id": "2",
+    "abstract": "Aspernatur explicabo velit consequatur est eaque eos. Officiis dignissimos fuga culpa adipisci hic. Accusantium sapiente eius aut enim officiis quis. Blanditiis explicabo voluptates delectus numquam. Commodi tenetur magnam necessitatibus rerum magnam. Voluptas dolor fugiat ipsam repellat voluptatum. Cupiditate debitis ea nobis veritatis nihil. Alias mollitia labore eveniet voluptatem maxime explicabo."
+}
+
+### BOOK DELETE request
+DELETE http://localhost:8000/api/books/2
+
+
