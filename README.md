@@ -1,2 +1,2 @@
 # laravel_rest_api
- Simple Laravel REST API for book store
+This project was created to practice building a RESP API in Laravel.
